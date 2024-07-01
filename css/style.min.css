@@ -1,0 +1,643 @@
+@font-face {
+  font-family: adelia;
+  src: url(../fuentes/adelia_3/adelia.otf);
+}
+@font-face {
+  font-family: adelia1;
+  src: url(../fuentes/adelia_3/adelia.ttf);
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+ 
+h1{font-family: Adelia ;
+  font-size: 10 px;
+  
+ }
+ h2{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+
+  
+ }
+ 
+ h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Work Sans', sans-serif, 
+  margin-top: 0;
+}
+
+.custom-title {
+    font-size: 36px;
+    color: #333; /* Cambia el color según tu preferencia */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+
+a {
+  color: black;
+  transition: all .3s ease-in-out;
+}
+ 
+a:focus, button:focus {
+  outline: none;
+}
+ 
+.btn:hover, a:hover {
+  text-decoration: none;
+  color: black;
+}
+ 
+img {
+    max-width: 100%;
+    width: 100%;
+    height:100%; }
+
+  img:hover {
+      transform: scale(1.2);
+      transition: 1s;
+  }
+ 
+/* Responsivo */
+@media (max-width: 767px) and (orientation: landscape) {
+  .jumbotron {
+      min-height: 500px;
+  }
+}
+ 
+/* Barra de navegación */
+
+#header-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d887a2; /* Color de fondo del menú */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+.navbar-brand img {
+  max-height: 100px;
+}
+ 
+
+
+.navbar-brand {
+  font-size: 40px;
+  color: #000;
+}
+ 
+.navbar-nav .nav-link {
+  color: #140f0f;
+  transition: .3s ease;
+  font-size: 20px;
+}
+ 
+.navbar-nav:hover li a {
+  opacity: 0.5;
+}
+ 
+.navbar-nav:hover li a:hover {
+  opacity: 1;
+}
+ 
+.navbar-toggler {
+  font-size: 2rem;
+  color: black;
+}
+ 
+/* Jumbotron */
+.jumbotron {
+  color: #201414;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  border-radius: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  min-height: 100vh;
+}
+ 
+.jumbotron h1 {
+  line-height: .9;
+  font-weight: bold;
+  display: inline-block;
+  border: 15px solid #fff;
+  padding: 100px;
+  font-size: 9rem;
+  opacity: 0;
+  animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+  animation-delay: .8s;
+}
+ 
+.jumbotron-single h1 {
+  font-size: 3rem !important;
+}
+ 
+/* Botón */
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 9px 25px;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+}
+ 
+/* Formulario rectangular */
+.rectangle-1, .rectangle-2 {
+  width: 2000px;
+  height: 400px;
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  position: absolute;
+  z-index: 0;
+}
+ 
+/* Animaciones */
+@keyframes fadeInFromTop {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+ 
+@keyframes floating {
+  0% {
+      transform: translate(0%, 0%) rotate(25deg);
+  }
+  25% {
+      transform: translate(5%, 15%) rotate(25deg);
+  }
+  50% {
+      transform: translate(10%, 5%) rotate(25deg);
+  }
+  75% {
+      transform: translate(0%, 15%) rotate(25deg);
+  }
+  100% {
+      transform: translate(0%, 0%) rotate(25deg);
+  }
+}
+ 
+@keyframes floating-slow {
+  0% {
+      transform: translate(0%, 0%) rotate(25deg);
+  }
+  25% {
+      transform: translate(1%, 3%) rotate(25deg);
+  }
+  50% {
+      transform: translate(2%, 1%) rotate(25deg);
+  }
+  75% {
+      transform: translate(0%, 3%) rotate(25deg);
+  }
+  100% {
+      transform: translate(0%, 0%) rotate(25deg);
+  }
+}
+ 
+/* Responsivo */
+@media (max-width: 768px) {
+  .jumbotron h1 {
+      font-size: 6rem;
+  }
+}
+
+
+
+/* Carrousel */
+#carrousel {
+  width: 80%; /* Reducir el ancho del carrusel */
+  max-width: 1200px; /* Establecer un ancho máximo */
+  height: 50vh; /* Reducir la altura del carrusel */
+  background-color: #ffffff;
+  display: flex;
+  margin: 0 auto; /* Centrar horizontalmente */
+  overflow: hidden; /* Ocultar elementos que se salgan del carrusel */
+  position: relative; /* Establecer posición relativa para botones de navegación */
+}
+
+#carrousel>#imagen {
+  width: 100%; /* Ajustar el tamaño de las imágenes al contenedor */
+  height: 100%; /* Ajustar el tamaño de las imágenes al contenedor */
+  background-size: cover; /* Ajustar el tamaño de las imágenes al contenedor */
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+#imagen-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+#descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+}
+
+button#retroceder,
+button#avanzar {
+  width: 50px; /* Reducir el tamaño de los botones */
+  height: 50px; /* Reducir el tamaño de los botones */
+  border-radius: 50%; /* Hacer los botones circulares */
+  border: none; 
+  font-size: 1rem;
+  color: #47441b;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  position: absolute; /* Posición absoluta para los botones */
+  top: 50%; /* Posicionar verticalmente en el centro */
+  transform: translateY(-50%); /* Ajustar verticalmente en el centro */
+}
+
+button#retroceder {
+  left: 0; /* Posicionar a la izquierda */
+  margin-left: 15px; /* Ajustar el margen izquierdo */
+}
+
+button#avanzar {
+  right: 0; /* Posicionar a la derecha */
+  margin-right: 15px; /* Ajustar el margen derecho */
+}
+
+/*menu*/
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000; /* Para asegurar que esté por encima del resto del contenido */
+}
+ 
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ 
+.menu ul li {
+  display: inline;
+  margin: 0 10px;
+}
+ 
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/*footer*/
+
+.mastfoot {
+  background-color: #d887a2; /* Color de fondo del footer */
+  color: #fff; /* Color de texto del footer */
+  padding: 20px 0;
+}
+.mastfoot a {
+  color: #fff; /* Color de los enlaces del footer */
+}
+
+
+.logo{
+    width: 164px;
+    height: 84px;
+    cursor: pointer;
+}
+
+.cart{
+    width: 30px;
+    height: auto;
+}
+
+
+
+.cart-products{
+    position: absolute!important;
+    top: 82px;
+    right: -18px;
+    background-color: #f5c9d7;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+    min-width: 290px;
+}
+
+.cart:hover{
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+/*end header*/
+.products{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: pace-around;
+}
+
+
+
+
+
+
+.carts img{
+    width: 100%;
+}
+.carts p{
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-bottom: 24px;
+}
+.carts div p{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: #f5c9d7;
+    color: #fff;
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.carts div{
+    position: relative;
+}
+.carts a{
+    font-family: system-ui;
+    text-decoration: none;
+    background: #f5c9d7;
+    padding: 9px 23px;
+    color: #000000;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.carts a:hover{
+    background: #fff;
+    color: black;
+    border: solid 2px black;
+    transition-duration: .3s;
+}
+
+/*float cart*/
+.cart-products .item img{
+  width: 200px; /* Ancho deseado */
+  height: 200px; /* Alto deseado */
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px red;
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item span{
+    background-color: #f5c9d7;
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+.cart-products h3{
+    margin-bottom: 0;
+}
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+}
+
+/*stye to btn close*/
+p.close-btn{
+    top: -4px;
+    right: 6px;
+    cursor: pointer;
+    color: #000;
+}
+
+
+.contenido {
+  text-align: center;
+}
+
+.carts{
+  display: inline-block;
+  text-align: center;
+  max-width: 250px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+  padding-bottom: 34px;
+  margin-bottom: 30px;
+  width: 300px;
+  margin-right: 20px; 
+  vertical-align: middle
+}
+
+.modo-oscuro-prompt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  z-index: 9999;
+  text-align: center;
+}
+
+.modo-oscuro-prompt button {
+  margin: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode nav {
+  background-color: #222222;
+}
+
+.dark-mode footer {
+  background-color: #222222;
+}
+
+.tic-tac-toe {
+  display: inline-block;
+}
+ 
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+ 
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  cursor: pointer;
+  color: black; /* Set text color to black */
+}
+ 
+#gameStatus {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(241, 174, 225, 0.5); 
+}
+ 
+.modal-content {
+  background-color: #d887a2;
+  margin: 20% auto; /* Centrar verticalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+ 
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+ 
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.promociones {
+  text-align: center;
+}
+.promociones img {
+  width: 100%;
+  max-width: 400px; /* Definir un ancho máximo opcional */
+  height: auto;
+}
+.promociones .title {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.promociones a {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f5c9d7;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.promocion a:hover {
+  background-color:  #f5c9d7;
+}
+ 
+.promo-image {
+  max-width: 400px;
+  max-height: 300px;
+  width: 5000px;
+  height: 500px;
+}
+.titular-comentario {
+  margin: 0.3em;
+  padding-bottom: 4px;
+  padding-left: 0.2em;
+}
+
+.titular-comentario {
+  height: 60px;
+  width: 500px;
+  overflow: hidden;
+  padding: 5px 5px 0 !important;
+}
+
+.esquinas {
+  -moz-border-radius: 4px 4px 4px 4px;
+}
+
+.contenido-comentario {
+  background: url("images/fondotitulo.png") repeat-x scroll 50% 50% #ffffff;
+  border: 1px solid #fce5ec;
+  color: #242323;
+  font-weight: "Lucida Sans Unicode";
+}
+
+.fondo_mensaje {
+background-color: #f1ecec;
+  height: 100%;
+  width: 520px;
+  overflow: hidden;
+  padding: 2px 2px 0 !important;
+  margin-left: 100px;
+}
+
+.texto_mensaje {
+font-family: "Lucida Sans Unicode";
+font-size: 12px;
+text-align: center;
+padding-top: 5px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+}
