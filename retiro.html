@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco - Modal con WhatsApp</title>
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.4); 
+            padding-top: 60px; 
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+            max-width: 500px; 
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            animation: fadeIn 0.5s;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .modal-body {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .modal-footer {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #e5e5e5;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+
+        .modal-footer a, .modal-footer button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .modal-footer a:hover, .modal-footer button:hover {
+            background-color: #45a049;
+        }
+
+        .modal-footer .whatsapp {
+            background-color: #25D366;
+        }
+
+        .modal-footer .whatsapp:hover {
+            background-color: #1EBEA5;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><button onclick="mostrarModal()">error de trazabilidad</button></center>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Información Importante</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>En este momento no puedes realizar movimientos desde tu cuenta . Si necesita más ayuda, puede contactarnos en WhatsApp.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://wa.me/12544989245" target="_blank" class="whatsapp">Chatea con nosotros en WhatsApp</a>
+                <button onclick="volverAlMenu()">Volver al Menú</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function volverAlMenu() {
+            window.location.href = 'index.html'; // Reemplaza 'index.html' con la URL de tu menú
+        }
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <center>
+        <div>
+            &copy; Copyright <strong><span>Fiduconfianza s.a.s <br></span></strong>. All Rights Reserved
+        </div>
+    </center>
+</body>
+</html>

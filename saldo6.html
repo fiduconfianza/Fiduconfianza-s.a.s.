@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco - Ver Saldo</title>
+    <link rel="stylesheet" href="css/saldo.css">
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.4); 
+            padding-top: 60px; 
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+            max-width: 500px; 
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            animation: fadeIn 0.5s;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .modal-body {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            border-top: 1px solid #e5e5e5;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+
+        .modal-footer button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .modal-footer button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="saldo1" style="display: none;">1000.00</div> <!-- Saldo de Didier -->
+
+    <button onclick="mostrarSaldo('didier')">Mostrar Saldo de Didier</button>
+    <button onclick="volverAlMenu()">Volver al Menú</button>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Información de Saldo</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="saldoMessage"></p>
+            </div>
+            <div class="modal-footer">
+                <h2>Fiduconfianza s.a.s</h2>
+                <button class="retirar">Retiro</button>
+                <button class="close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarSaldo(usuario) {
+            let saldo;
+            let nombre;
+            if (usuario === 'didier') {
+                saldo = document.getElementById('saldo1').textContent;
+                nombre = 'Didier';
+            } else {
+                alert('Usuario no reconocido');
+                return;
+            }
+
+            const mensaje = `
+                ¡Hola ${nombre}!
+                Cuenta NO. *****5632
+
+                Su saldo actual es: $${saldo}
+
+                "Ahorra dinero y ahorra preocupaciones.
+                La seguridad financiera está al alcance de tu mano."
+
+                Gracias por seguir confiando en nosotros
+            `;
+
+            document.getElementById('saldoMessage').innerText = mensaje;
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function volverAlMenu() {
+            window.location.href = 'index.html'; // Reemplaza 'index.html' con la URL de tu menú
+        }
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the <span> element that closes the modal
+        var closeElements = document.querySelectorAll(".close");
+
+        closeElements.forEach(function(element) {
+            element.onclick = function() {
+                modal.style.display = "none";
+            }
+        });
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Redirigir a la página de retiro
+        document.querySelector('.retirar').onclick = function() {
+            window.location.href = 'retiro.html'; // Reemplaza 'retiro.html' con la URL de la página de retiro
+        }
+    </script>
+
+    <center>
+        <div>
+            &copy; Copyright <strong><span>Fiduconfianza s.a.s <br></span></strong>. All Rights Reserved
+        </div>
+    </center>
+</body>
+</html>
