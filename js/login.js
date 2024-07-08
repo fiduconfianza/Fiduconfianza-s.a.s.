@@ -7,6 +7,8 @@ function validarPassword() {
         return false;
     }
 
+    <!-- en este espacio van los nombre de usuario -->
+
     const validUsers = {
        'Silvia0324': 'saldo1.html',
         'Angelina Ortega flores': 'saldo2.html',
@@ -32,7 +34,7 @@ function validarPassword() {
     };
 
     if (validUsers.hasOwnProperty(usuario)) {
-        if (password === '92564368') {
+        if (password === '92564368') {  <!-- en este espacio van la contraseña, todos tienen la misma contraseña -->
             alert('Bienvenido: ' + usuario);
             window.location.href = validUsers[usuario];
             return false; // Evitar el envío del formulario
