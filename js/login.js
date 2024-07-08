@@ -12,7 +12,7 @@ function validarPassword() {
     const validUsers = {
        'Silvia0324': 'saldo1.html',
         'Angelina Ortega flores': 'saldo2.html',
-        'carlos42': 'saldo3.html',
+        'lucas': 'saldo3.html',
         'javier23': 'saldo4.html',
         'luisjk': 'saldo5.html',
         'juan': 'saldo6.html',
