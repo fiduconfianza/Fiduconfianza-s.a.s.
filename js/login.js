@@ -19,7 +19,7 @@ function validarPassword() {
         'javier6': 'saldo9.html',
         'luisdf': 'saldo10.html'
          'carlos4': 'saldo11.html',
-        'javier2': 'saldo12.html',
+        'javier269': 'saldo12.html',
         'luisj': 'saldo13.html',
         'juan5': 'saldo14.html',
         'andre3': 'saldo15.html',
@@ -27,7 +27,7 @@ function validarPassword() {
         'javier2': 'saldo17.html',
         'luisd3': 'saldo18.html'
        'javier0': 'saldo19.html',
-        'luisk': 'saldo20.html'
+        'luisk8': 'saldo20.html',
     };
 
     if (validUsers.hasOwnProperty(usuario)) {
