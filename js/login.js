@@ -14,20 +14,7 @@ function validarPassword() {
         'javier23': 'saldo4.html',
         'luisjk': 'saldo5.html',
         'juan': 'saldo6.html',
-        'andre36': 'saldo7.html',
-        'carlos50': 'saldo8.html',
-        'javier6': 'saldo9.html',
-        'luisdf': 'saldo10.html'
-         'carlos4': 'saldo11.html',
-        'javier269': 'saldo12.html',
-        'luisj': 'saldo13.html',
-        'juan5': 'saldo14.html',
-        'andre3': 'saldo15.html',
-        'carlos5': 'saldo16.html',
-        'javier2': 'saldo17.html',
-        'luisd3': 'saldo18.html'
-       'javier0': 'saldo19.html',
-        'luisk8': 'saldo20.html',
+       
     };
 
     if (validUsers.hasOwnProperty(usuario)) {
