@@ -90,9 +90,9 @@
     </style>
 </head>
 <body>
-    <div id="saldo1" style="display: none;">600.00</div> <!-- Saldo de tomas -->
+    <div id="saldo1" style="display: none;">71.200 dolares</div> <!-- Saldo de isaaccruz -->
 
-    <button onclick="mostrarSaldo('tomas')">Mostrar Saldo de tomas</button>
+    <button onclick="mostrarSaldo('isaaccruz')">Mostrar Saldo de isaaccruz</button>
     <button onclick="volverAlMenu()">Volver al Menú</button>
 
     <!-- Modal Structure -->
@@ -117,9 +117,9 @@
         function mostrarSaldo(usuario) {
             let saldo;
             let nombre;
-            if (usuario === 'tomas') {
+            if (usuario === 'isaaccruz') {
                 saldo = document.getElementById('saldo1').textContent;
-                nombre = 'tomas';
+                nombre = 'isaaccruz';
             } else {
                 alert('Usuario no reconocido');
                 return;
@@ -130,6 +130,10 @@
                 Cuenta NO. *****5632
 
                 Su saldo actual es: $${saldo}
+                movimientos:
+
+                juzgado 33.200 dolares
+                indemnización 38.000 dolares
 
                 "Ahorra dinero y ahorra preocupaciones.
                 La seguridad financiera está al alcance de tu mano."
