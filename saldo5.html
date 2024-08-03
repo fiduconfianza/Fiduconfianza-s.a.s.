@@ -90,9 +90,9 @@
     </style>
 </head>
 <body>
-    <div id="saldo1" style="display: none;">1000.00</div> <!-- Saldo de Didier -->
+    <div id="saldo1" style="display: none;">15,000 dolares</div> <!-- jarquinriosemilia-->
 
-    <button onclick="mostrarSaldo('didier')">Mostrar Saldo de Didier</button>
+    <button onclick="mostrarSaldo('jarquinriosemilia')">Mostrar Saldo de jarquinriosemilia</button>
     <button onclick="volverAlMenu()">Volver al Menú</button>
 
     <!-- Modal Structure -->
@@ -117,9 +117,9 @@
         function mostrarSaldo(usuario) {
             let saldo;
             let nombre;
-            if (usuario === 'didier') {
+            if (usuario === 'jarquinriosemilia') {
                 saldo = document.getElementById('saldo1').textContent;
-                nombre = 'Didier';
+                nombre = 'jarquinriosemilia';
             } else {
                 alert('Usuario no reconocido');
                 return;
