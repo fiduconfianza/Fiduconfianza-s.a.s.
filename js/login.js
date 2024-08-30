@@ -18,7 +18,7 @@ function validarPassword() {
         'paguagaortezjose': 'saldo6.html',
         'abelflores': 'saldo7.html',
         'robertobebcaz': 'saldo8.html',
-        'javier6': 'saldo9.html',
+        'AnabelGutierrezzuno': 'saldo9.html',
         'luisdf': 'saldo10.html',
         'didier2': 'saldo11.html',
         'andres3': 'saldo12.html',
