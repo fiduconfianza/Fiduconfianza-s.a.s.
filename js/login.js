@@ -21,7 +21,7 @@ function validarPassword() {
         'AnabelGutierrezzuno': 'saldo9.html',
         'ArturoHernández': 'saldo10.html',
         'Juan Núñez': 'saldo11.html',
-        'andres3': 'saldo12.html',
+        'lusvindl': 'saldo12.html',
         'carlos4': 'saldo13.html',
         'javier2': 'saldo14.html',
         'luisj': 'saldo15.html',
