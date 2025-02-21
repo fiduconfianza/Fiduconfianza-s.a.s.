@@ -14,7 +14,7 @@ function validarPassword() {
         'Angelina Ortega flores': 'saldo2.html',
         'Lusvindl': 'saldo3.html',
         'albertc9': 'saldo4.html',
-        'jarquinriosemilia': 'saldo5.html',
+        'rigobertov': 'saldo5.html',
         'paguagaortezjose': 'saldo6.html',
         'MarthaRamírez': 'saldo7.html',
         'robertobebcaz': 'saldo8.html',
