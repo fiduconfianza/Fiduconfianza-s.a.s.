@@ -10,7 +10,7 @@ function validarPassword() {
     <!-- en este espacio van los nombre de usuario -->
 
     const validUsers = {
-       'Silvia0324': 'saldo1.html',
+       'glendyalv': 'saldo1.html',
         'Angelina Ortega flores': 'saldo2.html',
         'glendyalvarado': 'saldo3.html',
         'albertc9': 'saldo4.html',
