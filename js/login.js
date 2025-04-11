@@ -19,7 +19,7 @@ function validarPassword() {
         'MarthaRamírez': 'saldo7.html',
         'robertobebcaz': 'saldo8.html',
         'AnabelGutierrezzuno': 'saldo9.html',
-        'ArturoHernández': 'saldo10.html',
+        'glendyalvarado': 'saldo10.html',
         'albertc9': 'saldo11.html',
         'doragiron': 'saldo12.html',
         'Guillermolira': 'saldo13.html',
