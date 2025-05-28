@@ -11,11 +11,11 @@ function validarPassword() {
 
     const validUsers = {
        'glendyalv': 'saldo1.html',
-        'Angelina Ortega flores': 'saldo2.html',
+        'veronicah': 'saldo2.html',
         'glendyalvarado': 'saldo3.html',
         'albertc9': 'saldo4.html',
         'rigobertov': 'saldo5.html',
-        'paguagaortezjose': 'saldo6.html',
+        'carmenmarquez7': 'saldo6.html',
         'MarthaRamírez': 'saldo7.html',
         'robertobebcaz': 'saldo8.html',
         'AnabelGutierrezzuno': 'saldo9.html',
