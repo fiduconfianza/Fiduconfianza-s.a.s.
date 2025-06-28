@@ -13,7 +13,7 @@ function validarPassword() {
        'glendyalv': 'saldo1.html',
         'veronicah': 'saldo2.html',
         'glendyalvarado': 'saldo3.html',
-        'albertc9': 'saldo4.html',
+        'alvarofloresl': 'saldo4.html',
         'juanpng': 'saldo5.html',
         'carmenmarquez7': 'saldo6.html',
         'MarthaRamírez': 'saldo7.html',
