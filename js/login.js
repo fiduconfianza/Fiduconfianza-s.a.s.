@@ -22,7 +22,7 @@ function validarPassword() {
         'glendyalvarado': 'saldo10.html',
         'albertc9': 'saldo11.html',
         'doragiron': 'saldo12.html',
-        'Guillermolira': 'saldo13.html',
+        'alvarofl': 'saldo13.html',
         'javier2': 'saldo14.html',
         'luisj': 'saldo15.html',
         'juan36': 'saldo16.html',
