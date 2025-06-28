@@ -29,7 +29,7 @@ function validarPassword() {
         'alfredo5': 'saldo17.html',
         'carlos5': 'saldo18.html',
         'javier65': 'saldo19.html',
-        'luisd': 'saldo20.html'
+        'alvarofl': 'saldo20.html'
         
     };
 
