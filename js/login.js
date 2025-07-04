@@ -17,7 +17,7 @@ function validarPassword() {
         'juanpng': 'saldo5.html',
         'carmenmarquez7': 'saldo6.html',
         'MarthaRamírez': 'saldo7.html',
-        'robertobebcaz': 'saldo8.html',
+        'cristobaltapia': 'saldo8.html',
         'AnabelGutierrezzuno': 'saldo9.html',
         'glendyalvarado': 'saldo10.html',
         'albertc9': 'saldo11.html',
