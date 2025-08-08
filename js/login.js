@@ -12,7 +12,7 @@ function validarPassword() {
     const validUsers = {
        'glendyalv': 'saldo1.html',
         'veronicah': 'saldo2.html',
-        'jesusvazquez': 'saldo3.html',
+        'danielacosta': 'saldo3.html',
         'alvarofloresl': 'saldo4.html',
         'juanpng': 'saldo5.html',
         'carmenmarquez7': 'saldo6.html',
@@ -47,3 +47,4 @@ function validarPassword() {
         return false;
     }
 }
+
