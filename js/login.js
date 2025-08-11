@@ -14,7 +14,7 @@ function validarPassword() {
         'veronicah': 'saldo2.html',
         'danielacosta': 'saldo3.html',
         'alvarofloresl': 'saldo4.html',
-        'juanpng': 'saldo5.html',
+        'arturoesquivel': 'saldo5.html',
         'carmenmarquez7': 'saldo6.html',
         'MarthaRamírez': 'saldo7.html',
         'cristobaltapia': 'saldo8.html',
@@ -47,4 +47,5 @@ function validarPassword() {
         return false;
     }
 }
+
 
