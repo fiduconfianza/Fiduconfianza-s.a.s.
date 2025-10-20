@@ -16,7 +16,7 @@ function validarPassword() {
         'alvarofloresl': 'saldo4.html',
         'arturoesquivel': 'saldo5.html',
         'blancaauxiliogarcia': 'saldo6.html',
-        'leovezarate': 'saldo7.html',
+        'ivettmv': 'saldo7.html',
         'leticiarodriguez': 'saldo8.html',
         'AnabelGutierrezzuno': 'saldo9.html',
         'glendyalvarado': 'saldo10.html',
@@ -47,6 +47,7 @@ function validarPassword() {
         return false;
     }
 }
+
 
 
 
