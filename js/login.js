@@ -20,7 +20,7 @@ function validarPassword() {
         'leticiarodriguez': 'saldo8.html',
         'AnabelGutierrezzuno': 'saldo9.html',
         'glendyalvarado': 'saldo10.html',
-        'albertc9': 'saldo11.html',
+        'franciscovargas': 'saldo11.html',
         'doragiron': 'saldo12.html',
         'pascual77': 'saldo13.html',
         'javier2': 'saldo14.html',
@@ -47,6 +47,7 @@ function validarPassword() {
         return false;
     }
 }
+
 
 
 
