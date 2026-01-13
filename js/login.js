@@ -11,7 +11,7 @@ function validarPassword() {
 
     const validUsers = {
        'glendyalv': 'saldo1.html',
-        'veronicah': 'saldo2.html',
+        'florlorenzo': 'saldo2.html',
         'danielacosta': 'saldo3.html',
         'alvarofloresl': 'saldo4.html',
         'arturoesquivel': 'saldo5.html',
@@ -47,6 +47,7 @@ function validarPassword() {
         return false;
     }
 }
+
 
 
 
