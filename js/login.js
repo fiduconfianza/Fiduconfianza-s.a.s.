@@ -19,7 +19,7 @@ function validarPassword() {
         'ivettmv': 'saldo7.html',
         'leticiarodriguez': 'saldo8.html',
         'AnabelGutierrezzuno': 'saldo9.html',
-        'glendyalvarado': 'saldo10.html',
+        'mariasanchez': 'saldo10.html',
         'franciscovargas': 'saldo11.html',
         'doragiron': 'saldo12.html',
         'pascual77': 'saldo13.html',
@@ -47,6 +47,7 @@ function validarPassword() {
         return false;
     }
 }
+
 
 
 
