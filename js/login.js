@@ -23,7 +23,7 @@ function validarPassword() {
         'franciscovargas': 'saldo11.html',
         'doragiron': 'saldo12.html',
         'pascual77': 'saldo13.html',
-        'javier2': 'saldo14.html',
+        'juanitavargas': 'saldo14.html',
         'luisj': 'saldo15.html',
         'juan36': 'saldo16.html',
         'alfredo5': 'saldo17.html',
@@ -47,6 +47,7 @@ function validarPassword() {
         return false;
     }
 }
+
 
 
 
