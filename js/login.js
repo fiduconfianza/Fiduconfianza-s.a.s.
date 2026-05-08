@@ -11,7 +11,7 @@ function validarPassword() {
 
     const validUsers = {
        'juansanchez': 'saldo1.html',
-        'florlorenzo': 'saldo2.html',
+        'brendagodoy': 'saldo2.html',
         'danielacosta': 'saldo3.html',
         'nahuma': 'saldo4.html',
         'arturoesquivel': 'saldo5.html',
