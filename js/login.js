@@ -16,7 +16,7 @@ function validarPassword() {
         'nahuma': 'saldo4.html',
         'josemendoza': 'saldo5.html',
         'blancaauxiliogarcia': 'saldo6.html',
-        'ivettmv': 'saldo7.html',
+        'patriciacastillo': 'saldo7.html',
         'leticiarodriguez': 'saldo8.html',
         'AnabelGutierrezzuno': 'saldo9.html',
         'constantinogarcia': 'saldo10.html',
