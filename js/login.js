@@ -28,7 +28,7 @@ function validarPassword() {
         'juan36': 'saldo16.html',
         'alfredo5': 'saldo17.html',
         'carlos5': 'saldo18.html',
-        'javier65': 'saldo19.html',
+        'margaritoz': 'saldo19.html',
         'alvarofl': 'saldo20.html'
         
     };
