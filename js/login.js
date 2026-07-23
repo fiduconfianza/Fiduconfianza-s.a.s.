@@ -14,7 +14,7 @@ function validarPassword() {
         'brendagodoy': 'saldo2.html',
         'briang': 'saldo3.html',
         'nahuma': 'saldo4.html',
-        'josemendoza': 'saldo5.html',
+        'juanlopez': 'saldo5.html',
         'blancasanchez': 'saldo6.html',
         'patriciacastillo': 'saldo7.html',
         'adolfopojoy': 'saldo8.html',
